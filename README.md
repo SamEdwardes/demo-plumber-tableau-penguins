@@ -14,7 +14,7 @@ A demo of using [plumbertableau](https://rstudio.github.io/plumbertableau/index.
 
 After making any code changes run the following:
 
-```{r}
+```r
 renv::snapshot()
 rsconnect::writeManifest("app")
 ```
@@ -25,7 +25,7 @@ Next, push your changes to git. RStudio Connect will then automatically redeploy
 
 You can also deploy the app using the rsconnect api:
 
-```{r}
+```r
 rsconnect::deployAPI(
   api = "app",
   appFiles = c("plumber.R"),
