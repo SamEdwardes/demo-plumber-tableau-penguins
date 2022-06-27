@@ -3,5 +3,5 @@
 
 ```r
 renv::snapshot()
-rsconnect::writeManifest("app", appPrimaryDoc = "api.R")
+rsconnect::writeManifest("app")
 ```
